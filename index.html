@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="img/loggo.png" alt="საბურთალო">
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a class="activeHeader" href="#">მთავარი</a>
+                <a href="#">უპირატესობები</a>
+                <a href="#">პროექტის შესახებ</a>
+                <a href="#">ფასი</a>
+                <a href="#">გალერეა</a>
+                <a href="#">კონტაქტი</a>
+            </div>
+            <div id="menuIconChange" class="meniuIcon" onclick="menuIconShow()">
+                <div class="menuOne"></div>
+                <div class="menuTwo"></div>
+                <div class="menuThree"></div> 
+            </div>
+        </div>
+    </header>
+
+    <section class="bg">
+        <div class="bgchild">
+            <div class="callBox">
+                <input type="text" name="name" id="name" placeholder="სახელი და გვარი" autocomplete="off">
+                <input type="email" name="name" id="elFosta" placeholder="ელ-ფოსტა" autocomplete="off">
+                <input type="text" name="name" id="tel" placeholder="ტელეფონი" autocomplete="off">
+                <button>
+                    <img src="img/tel.svg" alt="Tel:">
+                    ზარის შეკვეთა
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantage">
+        <div class="advantageCont">
+            <h1 class="hOne">პროექტის უპირატესობები</h1>
+            <div class="advanCol">
+                <img src="img/Park010000.jpg" alt="img">
+                <h1 class="hOne">პროექტის უპირა პროექტის უპირა პროექტის უპირა პროექტის უპირა</h1>
+                <p>ლორემ ლორემ ლორემ ლორემ ლომრე ლორემ ლორემ  ლორემ ლომრე ლორემ ლორემ  ლორემ ლომრე ლორემ ლორემ  ლორემ ლომრე ლორემ ლორემ  ლორემ ლომრე ლორემ ლორემ  ლორემ ლომრე ლორემ ლორემ ლომრე ლორემ ლორემ ლომრევ ლორემ ლორემ ლომრე ლომრე</p>
+            </div>
+            <div class="advanCol">
+                <img src="img/Lego000.jpg" alt="img">
+                <h1 class="hOne">პროექტის უპირა პროექტის უპირა პროექტის უპირა პროექტის უპირა</h1>
+                <p>ლორემ ლორემ ლორემ ლორემ ლომრე ლორემ ლორემ ლომრე ლორემ ლორემ ლომრევ ლორემ ლორემ ლომრე ლომრე</p>
+            </div>
+            <div class="advanCol">
+                <img src="img/Pool010133.jpg" alt="img">
+                <h1 class="hOne">პროექტის უპირა</h1>
+                <p>ლორემ ლორემ ლორემ ლორემ ლომრე ლორემ ლორემ ლომრე ლორემ ლორემ ლომრევ ლორემ ლორემ ლომრე ლომრე</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projectAbout">
+        <div class="projectContent">
+            <h1 class="hOne">პროექტის შესახებ</h1>
+            <div  class="accordionContent">
+                <button class="accordionBtn">თბილისთან ახლოს, სუფთა ჰაერზე</button>
+                <div class="panelContent">
+                    <p>წავკისი მმდებაობს, მდებ წავკისი მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობ წავკისი მმდე წავკისი მმდებაობს, მდებაორეობ წავ წავკისი მმდებაობს, მდებაორეობ წავ ბაობს, მდებაორეობაორეობ</p>
+                </div>
+                <div class="hr"></div>
+                <button class="accordionBtn">დაცული და მოვლილი გარემო</button>
+                <div class="panelContent">
+                    <p>წავკისი მმდებაობს, მდებ წავკისი მმდებაობს, მდებაორეობ წავკისი მმ  წავკისი მმდებაობს, მდებაორეობ წავ წავკისი მმდებაობს, მდებაორეობ წავ წავკისი მმდებაობს, მდებაორეობ წავდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობაორეობ</p>
+                </div>
+                <div class="hr"></div>
+                <button class="accordionBtn">საერთო გარემო მოხმარების სივრცეები</button>
+                <div class="panelContent"> 
+                    <p>წავკისი მმდებაობს, მდებ წავკისი მმდებაობს, მდებაორეობ წავკისი  წავკისი მმდებაობს, მდებაორეობ წავ მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობაორეობ</p>
+                </div>
+                <div class="hr"></div>
+                <button class="accordionBtn">სივრცე გარემო თქვენი ჰობისთვის</button>
+                <div class="panelContent">
+                    <p>წავკისი მმდებაობს, მდებ წავკისი მმდებაობს, მდებაორეობ წა წავკისი მმდებაობს, მდებაორეობ წავვკისი მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობ წავკისი მმდებაობს, მდებაორეობაორეობ</p>
+                </div>
+                <div class="hr"></div>
+            </div>
+            <div class="projectImg">
+                <img src="img/9-9.jpg" alt="IMG">
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="priceContent">
+            <div class="horizontOne">
+                <div class="modernArch">თანამედროვე არქიტექტურის </div>
+                <div class="horizontOneImg">
+                    <img src="img/01edit__G.I_0005.jpg" alt="IMG">
+                </div>
+                <div class="horizontOneParagraf">
+                    <p>სახლებს მინიმალისტური სტილი და ფუნქციური მიდგომა გამოარჩევს. მათი მდებარეობა, არქიტექტურული გადაწყვეტა, მასალების ფაქტურა და ფერი ორგანულად მიესადაგება უბნის ლანდშაფტს. სახლის წინ მოეწყობა ლითონის მესერით შემოსაზღვრული საკუთარი ეზო</p>
+                </div>
+            </div>
+        </div>
+        <div class="priceContent">
+            <div class="horizontTwo">
+                <div class="horizontOneParagraf">
+                    <p>სახლებს მინიმალისტური სტილი და ფუნქციური მიდგომა გამოარჩევს. მათი მდებარეობა, არქიტექტურული გადაწყვეტა, მასალების ფაქტურა და ფერი ორგანულად მიესადაგება უბნის ლანდშაფტს. სახლის წინ მოეწყობა ლითონის მესერით შემოსაზღვრული საკუთარი ეზო</p>
+                </div>
+                <div class="modernArch">მწვანე ტექნოლოგიები</div>
+                <div class="horizontOneImg">
+                    <img src="img/1414.jpg" alt="IMG">
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <section class="sliderSection">
+            <h1 class="hOne">აირჩიე საკუთარი სახლი</h1>
+            <div class="sliderContainer">
+                <div class="motxovnadi">
+                    ყველაზე მოთხოვნადი
+                </div>
+                <div class="arroCont arroContLeft">
+                    <div class="arrLeft akonk" onclick="plusSlides(-1)">
+                        <div class="arrLeftContent"></div>
+                    </div>
+                </div>
+                <div class="slidershow">
+                    <div class="slides">
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="sliderContent">
+                                <h3 class="fasi">ფასი: 154,843 $</h3>
+                                <div class="lariDolari">
+                                    <img src="img/lari.png" alt="₾">
+                                    <img src="img/dolari.png" alt="$">
+                                </div>
+                                <p class="fartobi">სახლის საერთო ფართი: 127.4 მ<span class="sup">2</span></p>
+                                <div class="sliderContentLine"></div>
+                                <p class="fartobi">ნაკვეთის ფართი: 380 მ<span class="sup">2</span></p>
+                                <button class="sliderContentBtn">დეტალურად ნახვა</button>
+                            </div>
+                            <button class="sliderContact">კონტაქტი</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="arroCont arroContRight">
+                    <div class="arrRight akonk" onclick="plusSlides(+1)">
+                        <div class="arrRightContent"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dotContainer" style="text-align:center; margin-top: 25px;"></div>
+    </section>
+
+    <section class="galery">
+        <h1 class="hOne">გალერეა</h1>
+        <div class="galeryImg">
+            <div>
+                <img src="img/Mall020135.jpg" alt="IMG">
+            </div>
+            <div>
+                <img src="img/gym.jpg" alt="IMG">
+            </div>
+            <div>
+                <img src="img/qqqqqqqq.png" alt="IMG">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="hOne">კონტაქტი</h1>
+
+        <div class="ConColumn CoEmail">
+            <div class="cover1"></div>
+            <div class="telDiv">
+                <img class="ConImg" src="img/icon_email.png" alt="img">
+            </div>
+            <h4 >მოგვწერეთ</h4>
+            <h5>კითხვა: <span>info@m2.ge</span></h5>
+            <h5 style="margin-top: 15px; margin-bottom: 25px;">მოსაზრება:<span>feedback@m2.ge</span></h5>
+            <h6 style="margin-bottom: 25px;">ან აქვე</h6>
+            <button class="Cobtn">მოგვწერეთ</button>
+        </div>
+
+        <div class="ConColumn">
+            <div class="cover1"></div>
+            <div class="telDiv">
+                <img class="ConImg" src="img/telefhone.png" style="margin-top: 33px;" alt="img">
+            </div>
+            <h4>დაგვირეკეთ</h4>
+            <h5 style="margin-top: 40px; margin-bottom: 42px;">(032) <span>2 444 111</span> </h5>
+            <h6 style="margin-bottom: 25px;">ან ჩვენ დაგირეკავთ</h6>
+            <button class="Cobtn">ზარის შეკვეთა</button>
+        </div>
+
+
+        <div class="ConColumn">
+            <div class="cover1"></div>
+            <div class="telDiv">
+                <img class="ConImg" style="margin-top: 27px;" src="img/wife.png" alt="img">
+            </div>
+            <h4 style="margin-bottom: 14px;">მოგვყევით</h4>
+            <div class="sicoalIcon">
+                <div class="sicoalIconDiv">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="F"></a>
+                </div>
+                <div class="sicoalIconDiv youtube">
+                    <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt="You"></a>
+                </div>
+                <div class="sicoalIconDiv">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="img/instagram.png" alt="Ins"></a>
+                </div>
+            </div>
+            <h6 style="margin-bottom: 24px; ">ან გამოიწერეთ სიახლეები</h6>
+            <div class="inputColumn">
+                <input type="text" name="Email" id="email" placeholder="ელ.ფოსტა">
+                <div class="inputArrowBorder">
+                    <div class="inputArrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe class="mupStyle" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11911.490168524244!2d44.74938493366693!3d41.723269132316645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ska!2sge!4v1584702810115!5m2!1ska!2sge"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+    <div class="googleLine"></div>
+
+    <section class="adress">
+            <div class="misamarti">
+                <h3>სათავო ოფისი</h3>
+                <p>მიუსვლელის, <span class="nomeri">&#8470;</span>25 თბილისი (ორშაბათი-პარასკევი: 10:00 - 19:00)</p>
+            </div>
+            <div class="misamarti">
+                <h3>გაყიდვების ოფისი</h3>
+                <p>მიუსვლელის გამზირი <span class="nomeri">&#8470;</span>25<span class="sup">ა</span>, თბილისი. (ორშაბათი-პარასკევი: 10:00 - 19:00, შაბათი: 10:00 - 16:00)</p>
+            </div>
+            <div class="misamarti">
+                <h3>გაყიდვების ოფისი</h3>
+                <p>მიუსვლელის გამზირი <span class="nomeri">&#8470;</span>25. (ორშაბათი-პარასკევი: 10:00 - 19:00, შაბათი: 10:00 - 16:00)</p>
+            </div>
+            <div class="misamarti">
+                <h3>გაყიდვების ოფისი</h3>
+                <p>ქ. ბათუმი, მიუსვლელის <span class="nomeri">&#8470;</span>25 (ორშაბათი-პარასკევი: 10:00 - 19:00, შაბათი: 10:00 - 16:00)</p>
+            </div>
+            <div class="misamarti">
+                <h3>m<span class="sup">25</span> გალერეა</h3>
+                <p>მიუსვლელის ქ. <span class="nomeri">&#8470;</span>1 (ორშაბათი-პარასკევი: 10:00 - 19:00, შაბათი: 10:00 - 16:00)</p>
+            </div>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

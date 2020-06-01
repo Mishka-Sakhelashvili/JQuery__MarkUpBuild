@@ -1,0 +1,945 @@
+/* reset start */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, img, form, label, header, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+header, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+/* reset end */
+
+
+/* font start */
+@font-face {
+    font-family: caldinaMedium;
+    src: url(font/caldina/CaldinaMedium.ttf);
+    src:    url(font/caldina/CaldinaMedium.woff)
+            url(font/caldina/CaldinaMedium.woff2);
+}
+@font-face {
+    font-family: BPG Nino Mtavruli;
+    src: url(font/ninoMtavruli/bpg_nino_mtavruli_normal.ttf);
+    src:    url(font/ninoMtavruli/bpg_nino_mtavruli_normal.eot)
+            url(font/ninoMtavruli/bpg_nino_mtavruli_normal.svg)
+            url(font/ninoMtavruli/bpg_nino_mtavruli_normal.woff)
+            url(font/ninoMtavruli/bpg_nino_mtavruli_normal.woff2);
+}
+@font-face {
+    font-family: roboto;
+    src: url(font/roboto/Roboto-Regular.ttf);
+    src:    url(font/roboto/Roboto-Regular.woff)
+            url(font/roboto/Roboto-Regular.woff2);
+}
+/* font end */
+
+
+/* basic */
+.hOne{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "BPG Nino Mtavruli";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
+}
+.sup{
+    font-size: 12px;
+    vertical-align: text-top;
+}
+.nomeri{
+    content: "\2116";
+}
+/* basic */
+
+
+/* header start */
+header{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F36152;
+    z-index: 10000;
+}
+.head{
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.logo{
+    margin: 13px 0 14px 0;
+    margin-left: 10px;
+    float: left;
+    overflow: hidden;
+}
+.logo img{
+    height: 50px;
+    cursor: pointer;
+}
+.topnav{
+    float: right;
+    padding-top: 35px;
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'BPG Nino Mtavruli';
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+}
+.topnav a:hover, .activeHeader {
+    border-bottom: 2px solid #ffffff;
+}
+.meniuIcon{
+    display: none;
+}
+.meniuIcon div{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+.changeX .menuOne {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.changeX .menuTwo {
+    opacity: 0;
+}
+.changeX .menuThree {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* header end */
+
+
+/* bg start */
+.bg{
+    overflow: hidden;
+    width: 100%;
+    background-image: url(img/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bgchild{
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    height: 780px;
+    position: relative;
+    font-family: 'BPG Nino Mtavruli';
+}
+.callBox{
+    position: absolute;
+    width: 410px;
+    background-color: #F36152;
+    padding: 20px;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+}
+.callBox input, .callBox button{
+    display: block;
+    width: 100%;
+    padding: 22px 0 15px 14px;
+    font-size: 16px;
+    height: 54px;
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+.callBox input {
+    margin-bottom: 15px;
+    color: #404950;
+}
+.callBox button{
+    padding: 18px 0 15px 14px;
+    background-color: #404a50;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: start;
+}
+.callBox input:hover, .callBox button:hover{
+    opacity: 0.9;
+}
+.callBox button img {
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/* bg end */
+
+
+/* advantage start */
+.advantage{
+    width: 100%;
+    background-color: #F36152;
+}
+.advantageCont{
+    margin: 0 auto;
+    max-width: 1020px;
+    overflow: hidden;
+}
+.advantageCont h1 {
+    margin: 80px 0 50px 10px;
+}
+.advanCol{
+    float: left;
+    width: calc(33.3% - 20px);
+    margin: 10px;
+    margin-bottom: 100px;
+}
+.advanCol img{
+    width: 100%; 
+}
+.advanCol h1 {
+    margin: 25px 0 30px 0;
+}
+.advanCol p{
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: 'roboto';
+}
+/* advantage end */
+
+
+/* projectAbout start */
+.projectAbout{
+    background-color: #404a50;
+    overflow: hidden;
+}
+.projectContent{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.projectContent h1 {
+    margin-top: 70px;
+    padding-bottom: 50px;
+    font-family: 'roboto';
+}
+.projectImg{
+    float: left;
+    padding-left: 20px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.projectImg img{
+    width: 100%;
+}
+.accordionContent{
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.accordionBtn {
+    background-color: inherit;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 30px 0 10px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    font-family: 'roboto';
+}
+.active, .accordionBtn:hover {
+    opacity: 0.8;
+}
+.accordionBtn:after {
+    content: '+';
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "-";
+}
+.panelContent {
+    background-color: inherit;
+    color: #ffffff;
+    max-height: 0;
+    font-size: 14px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    opacity: 0.7;
+}
+.hr{
+      height: 1px;
+      width: 100%;
+      background-color: white;
+      opacity: 0.5;
+      margin-top: 5px;
+}
+/* projectAbout start */
+
+
+/* price start*/
+.price{
+    width: 100%;
+    background-color: #f4f4f5;
+    overflow: hidden;
+}
+.priceContent{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 10px 0 10px;
+}
+.horizontOne{
+    width: 100%;
+    overflow: hidden;
+}
+.horizontOneImg{
+    width: 55%;
+    float: left;
+    margin: 70px 0 0 0;
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+}
+.horizontOneImg img{
+    width: 100%;
+    margin-left: 50px;
+}
+.horizontOneParagraf{
+    float: left;
+    width: 45%;
+    padding-left: 20px;
+    vertical-align: top;
+    font-family: 'roboto';
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 72px;
+    color: gray;
+}
+.modernArch{
+    overflow: hidden;
+    background-color: #F36152;
+    color: #ffffff;
+    font-size: 25px;
+    position: absolute;
+    max-width: 450px;
+    padding: 25px 17px 80px 50px;
+    border-radius: 0px 15px;
+    font-family: 'BPG Nino Mtavruli';
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.horizontTwo{
+    overflow: hidden;
+    margin-bottom: 55px;
+    position: relative;
+}
+.horizontTwo .modernArch {
+    right: 0;
+}
+.horizontTwo .horizontOneImg img{
+    margin-left: 20px;
+    padding-right: 70px;
+}
+.horizontTwo .horizontOneParagraf{
+    margin-left: 0;
+}
+/* price end*/
+
+
+/* chooseHome start*/
+.sliderSection{
+    width: 100%;
+    background-color: #f4f4f5;
+}
+.sliderSection .hOne{
+    color: black;
+    margin-left: 20px;
+    max-width: 1000px;
+    padding: 50px 0 60px 10px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+.sliderContainer{
+    max-width: 1085px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.slidershow{
+    height: 285px;
+    max-width: 1035px;
+    position: absolute;
+    left: 25px;
+}
+.slides{
+    overflow: hidden;
+    position: absolute;
+    height: 285px;
+    left: 0;
+    margin-top: 15px;
+}
+.slider{
+    width: 315px;
+    height: 285px;
+    background-color: #e0e0e0;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 0px 20px;
+    float: left; 
+}
+.activeSlider{
+    background-color: #404a50;
+    transition: background-color 0.4s ease;
+    overflow: hidden;
+}
+.motxovnadi{
+    opacity: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+    background-color: #F36152;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 0px;
+    font-family: "BPG Nino Mtavruli";
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transition: opacity 2s ease;
+}
+.sliderContent{
+    margin: 10px 10px 0 10px;
+    height: 210px;
+    background-color: #ffffff;
+    border-radius: 0px 20px;
+}
+.sliderContact{
+    font-size: 17px;
+    color: #404a50;
+    text-align: center;
+    font-family: "BPG Nino Mtavruli";
+    width: 130px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 90px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-color: #ffffff; 
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+.sliderContact:hover{
+    opacity: 0.7;
+}
+.fasi{
+    color: #404a50;
+    font-family: "roboto";
+    font-size: 17px;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.lariDolari{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.lariDolari img{
+    cursor: pointer;
+}
+.sliderContent p{
+    color: #888888;
+    font-size: 15px;
+    text-align: center;
+    font-family: "roboto";
+    font-weight: bold;
+}
+.sliderContentLine{
+    height: 1px;
+    width: 240px;
+    background-color:#888888;
+    opacity: 0.8;
+    margin: 5px auto 5px auto;
+}
+.sliderContentBtn{
+    font-family: "roboto";
+    outline: none;
+    color: #888888;
+    text-align: center;
+    font-size: 12px;
+    width: 130px;
+    height: 25px;
+    border: 1px solid #404a50;
+    background-color: inherit;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+.sliderContentBtn:hover{
+    opacity: 0.7;
+}
+.arroCont{
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    background-color: #f4f4f5;
+    z-index: 1000;
+}
+.arrLeft{
+    border-radius: 50px;
+    background-color: #F36152;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.arrLeftContent{
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: 8px;
+    margin-top: 6px;
+}
+.arrLeft:hover, .arrRight:hover{
+    opacity: 0.7;
+}
+.arrRightContent{
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: 4px;
+    margin-top: 6px;
+}
+.arroContRight{
+    right: 0;
+}
+.arrRight{
+    border-radius: 50px;
+    background-color: #F36152;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #404a50;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+.dotActive, .dot:hover{
+    background-color: #F36152;
+}
+/* chooseHome end*/
+
+
+/* galery start*/
+.galery{
+    width: 100%;
+    overflow: hidden;
+    background-color: #f4f4f5;
+}
+.galery .hOne {
+    max-width: 1070px;
+    color: black;
+    margin: 0 auto 0 auto;
+    padding: 90px 0 40px 10px;
+}
+.galeryImg {
+    width: 100%;
+    overflow: hidden;
+}
+.galeryImg div{
+    overflow: hidden;
+    height: 400px;
+    width: calc(33.33333333% - 13.33333333px);
+    padding-bottom: 20px;
+    float: left;
+}
+.galeryImg div:nth-child(3n-1){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.galeryImg img{
+    height: 100%;
+}
+/* galery end*/
+
+
+/* contact start*/
+.contact{
+    margin-top: 50px;
+    max-width: 1100px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact .hOne {
+    margin-bottom: 44px;
+    color: black;
+    padding-left: 10px;
+}
+.ConColumn{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: calc(33.3% - 20px);
+    height: 440px;
+    background-image: url(img/columnImg.gif);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.cover1{
+    height: 60px;
+    margin: 22px 22px 0 22px;
+    background-color: rgb(241, 241, 243);
+}
+.telDiv{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 10px solid rgb(241, 241, 243);
+    position: absolute;
+    overflow: hidden;
+    top: 22px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    background-color: #ffffff;
+}
+.ConImg {
+    margin-top: 36px;
+    width: 65px;
+    background-color: #ffffff;
+}
+.ConColumn h4{
+    color: #f7931d;
+    font-size: 18px;
+    margin-top: 110px; 
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-family: "BPG Nino Mtavruli";
+}
+.ConColumn h5 {
+    margin-top: 12px;
+    color: #cecece;
+    font-size: 15px;
+    font-family: 'roboto';
+}
+.ConColumn h5 span{
+    color: #888888;
+    font-size: 16px;
+}
+.ConColumn h6{
+    color: #f7931d;
+    font-size: 18px;
+    font-family: "BPG Nino Mtavruli";
+}
+.Cobtn{
+    border: none;
+    background-color: rgba(64, 74, 80, 0.3);
+    font-size: 14px;
+    width: 220px;
+    height: 30px;
+    outline: none;
+    color: #ffffff;
+    border-bottom: 1px solid #b8b8b8;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.Cobtn:hover{
+    background-color: rgba(247, 147, 70, 0.7);
+}
+.sicoalIcon{
+    width: 200px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+}
+.sicoalIconDiv{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    background-color: #ffffff;
+}
+.sicoalIcon img{
+    width: 60px;
+    float: left;
+    height: 60px;
+}
+.youtube{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.inputColumn{
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ConColumn input{
+    width: 170px;
+    height: 30px;
+    outline: none;
+    color: #404950;
+    padding-left: 8px;
+    font-size: 14px;
+    float: left;
+    border: 1px solid #cccccc;
+    font-family: 'roboto';
+}
+.inputArrow{
+    float: left;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: 1px solid #404950;
+    border-width: 0 1px 1px 0;
+    float: left;
+    padding: 5px;
+    margin-left: 8px;
+    margin-top: 9px;
+}
+.inputArrowBorder{
+    overflow: hidden;
+    background-color: rgba(64, 74, 80, 0.1);
+    width: 35px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-left: 0;
+    cursor: pointer;
+}
+.inputArrowBorder:hover{
+    background-color: rgba(247, 147, 70, 0.7);
+}
+/* contact end*/
+
+
+/* gogole mup start */
+#map{
+    overflow: hidden;
+    max-width: 1100px;
+    height: 250px;
+    margin: 0 auto 15px auto;
+}
+.mupStyle{
+    width: 100%;
+    height: 250px;
+}
+.googleLine{
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+/* gogole mup end */
+
+
+/* adress start */
+.adress{
+    max-width: 1100px;
+    overflow: hidden;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftAdres{
+    width: 50%;
+    float: left;
+}
+.misamarti{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.misamarti:hover{
+    background-color: #f1f1f2;
+    -moz-transition: background-color 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+}
+.misamarti h3{
+    font-family: "BPG Nino Mtavruli";
+    color: #f7931d;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.misamarti p{
+    padding-right: 50px;
+    color: #404950;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'roboto';
+    /* line-height: 15px; */
+    text-align: left;
+    color: #888888;
+    line-height: 18px;
+}
+/* adress end */
+
+
+/* media */
+@media screen and (max-width: 780px) {
+    .topnav{
+        display: none;
+    }
+    .meniuIcon{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+    .advantageCont{
+        padding: 10px;
+    }
+    .advanCol{
+        float: none;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .projectImg{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .accordionContent{
+        float: none;
+        width: 100%;
+    }
+    .horizontOneImg{
+        float: none;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .horizontOneImg img{
+        padding: 0;
+        margin: 0;
+    }
+    .horizontOneParagraf{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .horizontTwo .horizontOneParagraf{
+        margin-bottom: 20px;
+    }
+    .horizontTwo .horizontOneImg img {
+        padding: 0;
+        margin: 0;
+    }
+    .galeryImg div{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+    .galeryImg div:nth-child(3n-1) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .ConColumn{
+        float: none;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .misamarti{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .logo {
+        float: none;
+    }
+    .topnav.responsive{
+        display: block;
+        float: none;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+   .slidershow{
+        width: 345px;
+        overflow: hidden;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        height: 295px;
+   }
+   .arroContLeft{
+       left: 10%;
+   }
+   .arroContRight{
+       right: 10%;
+   }
+}
+
+
